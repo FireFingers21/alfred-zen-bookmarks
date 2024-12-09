@@ -755,21 +755,15 @@ end run</string>
 cat &lt;&lt; EOB
 {"items": [
 	{
-		"title": "Firefox",
-		"arg": "firefox",
-		$([[ ${releaseChannel} == "firefox" ]] &amp;&amp; echo $currSelected)
+		"title": "Zen Browser",
+		"arg": "zen",
+		$([[ ${releaseChannel} == "zen" ]] &amp;&amp; echo $currSelected)
 	},
 	{
-		"title": "Firefox Developer Edition",
-		"arg": "firefoxdeveloperedition",
-		"icon": { "path": "images/firefoxdevelopereditionLogo.png" },
-		$([[ ${releaseChannel} == "firefoxdeveloperedition" ]] &amp;&amp; echo $currSelected)
-	},
-	{
-		"title": "Firefox Nightly",
-		"arg": "nightly",
-		"icon": { "path": "images/nightlyLogo.png" },
-		$([[ ${releaseChannel} == "nightly" ]] &amp;&amp; echo $currSelected)
+		"title": "Zen Twilight",
+		"arg": "zentwilight",
+		"icon": { "path": "images/zentwilightLogo.png" },
+		$([[ ${releaseChannel} == "zentwilight" ]] &amp;&amp; echo $currSelected)
 	}
 ]}
 EOB</string>
@@ -1004,7 +998,7 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 			<key>description</key>
 			<string></string>
 			<key>label</key>
-			<string>Firefox Keyword</string>
+			<string>Zen Keyword</string>
 			<key>type</key>
 			<string>textfield</string>
 			<key>variable</key>
