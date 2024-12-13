@@ -17,7 +17,8 @@ FROM moz_places p
 JOIN moz_bookmarks b ON b.fk = p.id
 JOIN moz_bookmarks t ON t.id = b.parent
 LEFT JOIN moz_keywords k ON p.id = k.place_id
-GROUP BY p.url;"
+GROUP BY p.url
+HAVING b.title IS NOT NULL;"
 
 # Load Bookmarks
 sqlite3 -json ${bookmarks_file} ${sqlQuery} | jq -s \
