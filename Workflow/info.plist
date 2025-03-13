@@ -1160,6 +1160,10 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 						<string>company.thebrowser.Browser</string>
 					</array>
 					<array>
+						<string>Chromium</string>
+						<string>org.chromium.Chromium</string>
+					</array>
+					<array>
 						<string>Firefox</string>
 						<string>org.mozilla.firefox</string>
 					</array>
@@ -1185,7 +1189,7 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 					</array>
 					<array>
 						<string>Zen</string>
-						<string>org.mozilla.com.zen.browser</string>
+						<string>app.zen-browser.zen</string>
 					</array>
 				</array>
 			</dict>
@@ -1214,6 +1218,10 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 						<string>company.thebrowser.Browser</string>
 					</array>
 					<array>
+						<string>Chromium</string>
+						<string>org.chromium.Chromium</string>
+					</array>
+					<array>
 						<string>Firefox</string>
 						<string>org.mozilla.firefox</string>
 					</array>
@@ -1239,7 +1247,7 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 					</array>
 					<array>
 						<string>Zen</string>
-						<string>org.mozilla.com.zen.browser</string>
+						<string>app.zen-browser.zen</string>
 					</array>
 				</array>
 			</dict>
@@ -1254,7 +1262,7 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2024.12.1</string>
+	<string>2025.3</string>
 	<key>webaddress</key>
 	<string>https://github.com/FireFingers21/alfred-zen-bookmarks</string>
 </dict>
