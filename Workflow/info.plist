@@ -624,7 +624,7 @@ EOB</string>
 		open -b "app.zen-browser.zen" "about:profiles"
 		;;
 	"profilePath")
-		open ~"${1}"
+		open "${1}"
 		;;
 esac</string>
 				<key>scriptargtype</key>

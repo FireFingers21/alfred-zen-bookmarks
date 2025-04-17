@@ -11,11 +11,13 @@ case "${releaseChannel}" in
 esac
 readonly defaultProfile=$(awk -v versionCode="$versionCode" 'BEGIN {FS="="} $0 ~ versionCode {flag=1} flag && /^Default=Profiles/ {print $2; exit}' "${HOME}/Library/Application Support/zen/installs.ini")
 defaultProfilePath="/Library/Application Support/zen/${defaultProfile}"
-isValid="true"
 
 if [[ -z ${defaultProfile} ]]; then
-	defaultProfilePath="❌ No Profiles Found in ~/Library/Application Support/zen ❌"
-	isValid="false"
+	defaultProfileSubtext="❌ No Profiles Found in ~/Library/Application Support/zen ❌"
+	defaultProfileArg="${HOME}/Library/Application Support/zen"
+else
+	defaultProfileSubtext="~${defaultProfilePath}"
+	defaultProfileArg="${HOME}/${defaultProfilePath}"
 fi
 
 cat << EOB
@@ -28,11 +30,10 @@ cat << EOB
 	},
 	{
 		"title": "Open Default Profile in Finder",
-		"subtitle": "~${defaultProfilePath}",
-		"arg": "${defaultProfilePath}",
+		"subtitle": "${defaultProfileSubtext}",
+		"arg": "${defaultProfileArg}",
 		"icon": { "path": "images/${releaseChannel}Logo.png" },
-		"variables": { "pref_id": "profilePath" },
-		"valid": "${isValid}"
+		"variables": { "pref_id": "profilePath" }
 	},
 	{
 		"title": "Release Channel Settings",
