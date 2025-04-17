@@ -392,8 +392,8 @@ cat &lt;&lt; EOB
 	},
 	{
 		"title": "Zen",
-		"arg": "org.mozilla.com.zen.browser",
-		$([[ ${(P)setting} == "org.mozilla.com.zen.browser" ]] &amp;&amp; echo $currSelected)
+		"arg": "app.zen-browser.zen",
+		$([[ ${(P)setting} == "app.zen-browser.zen" ]] &amp;&amp; echo $currSelected)
 	}
 ]}
 EOB</string>
@@ -621,7 +621,7 @@ EOB</string>
 				<string>case "${pref_id}" in
 	"profileManager")
 		# Bundle ID is the same for Browser and Twilight as of writing
-		open -b "org.mozilla.com.zen.browser" "about:profiles"
+		open -b "app.zen-browser.zen" "about:profiles"
 		;;
 	"profilePath")
 		open ~"${1}"
