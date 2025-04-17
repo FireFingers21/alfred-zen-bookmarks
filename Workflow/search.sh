@@ -42,7 +42,7 @@ sqlite3 -json ${bookmarks_file} ${sqlQuery} | jq -s \
 		"icon": { "path": "images/\($releaseChannel).png" },
     		"mods": {
     			"cmd": {
-    				"subtitle": "Open in secondary browser",
+    				"subtitle": "⌘↩ Open in secondary browser",
     				"arg": .url,
     				"variables": { "bSecondary": true }
     			},
