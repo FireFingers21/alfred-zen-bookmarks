@@ -1088,11 +1088,11 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 				<key>pairs</key>
 				<array>
 					<array>
-						<string>Zen Browser</string>
+						<string>Zen</string>
 						<string>zen</string>
 					</array>
 					<array>
-						<string>Zen Twilight</string>
+						<string>Twilight</string>
 						<string>zentwilight</string>
 					</array>
 				</array>

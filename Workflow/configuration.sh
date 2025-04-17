@@ -6,7 +6,7 @@ case "${releaseChannel}" in
 		readonly versionCode="278CDD2020B02885"
 		;;
 	"zentwilight")
-		readonly versionCode="96EBDB229C4C7729"
+		readonly versionCode="9EBD2AC824310766"
 		;;
 esac
 readonly defaultProfile=$(awk -v versionCode="$versionCode" 'BEGIN {FS="="} $0 ~ versionCode {flag=1} flag && /^Default=Profiles/ {print $2; exit}' "${HOME}/Library/Application Support/zen/installs.ini")
