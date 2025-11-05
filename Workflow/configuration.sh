@@ -5,7 +5,7 @@ case "${releaseChannel}" in
 	"zen")
 		readonly versionCode="278CDD2020B02885"
 		;;
-	"zentwilight")
+	"zenTwilight")
 		readonly versionCode="9EBD2AC824310766"
 		;;
 esac
@@ -24,7 +24,6 @@ cat << EOB
 {"items": [
 	{
 		"title": "Open Zen Profile Manager",
-		"subtitle": "Manage profiles in the About Profiles page",
 		"icon": { "path": "images/${releaseChannel}Logo.png" },
 		"variables": { "pref_id": "profileManager" }
 	},
@@ -36,16 +35,10 @@ cat << EOB
 		"variables": { "pref_id": "profilePath" }
 	},
 	{
-		"title": "Release Channel Settings",
-		"subtitle": "Select your preferred build for ${alfred_workflow_name}",
+	    "title": "Configure Workflow...",
+	    "subtitle": "Open the configuration window for ${alfred_workflow_name}",
 		"icon": { "path": "images/${releaseChannel}Logo.png" },
-		"variables": { "pref_id": "build" }
-	},
-	{
-		"title": "Browser Settings",
-		"subtitle": "Select the default browsers for ${alfred_workflow_name}",
-		"icon": { "path": "images/${releaseChannel}Logo.png" },
-		"variables": { "pref_id": "browser" }
+		"variables": { "pref_id": "configure" }
 	},
 ]}
 EOB

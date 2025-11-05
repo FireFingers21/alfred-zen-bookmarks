@@ -5,7 +5,7 @@
 	<key>bundleid</key>
 	<string>com.firefingers21.zenbookmarks</string>
 	<key>category</key>
-	<string>Internet</string>
+	<string>Shared</string>
 	<key>connections</key>
 	<dict>
 		<key>1548B684-9B57-4C83-889B-7AB17368732A</key>
@@ -49,45 +49,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>6F8A2C30-E13A-4888-999D-FACFC9599D98</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>C0E39F35-B1CB-459F-8D72-BC47E355518C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>74C96E5F-4974-4901-B09D-1B0E8CE147E8</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>3BDFD6FD-AF87-4AEA-A15E-0AF5BEE62396</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>83517451-8657-4071-A9D9-BCE60E3988A2</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>E007DCBD-DBEA-4257-8AFE-2CDEA15E19BD</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>D0EB740F-5590-4BEA-AD30-5FC6944D1D8F</key>
 		<array>
 			<dict>
@@ -111,33 +72,8 @@
 				<true/>
 			</dict>
 		</array>
-		<key>E007DCBD-DBEA-4257-8AFE-2CDEA15E19BD</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>74C96E5F-4974-4901-B09D-1B0E8CE147E8</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>E1B365EF-BB47-41C8-B305-4FF9CE4F434B</key>
 		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>83517451-8657-4071-A9D9-BCE60E3988A2</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>56D023CC-6B52-48FC-9ED5-65F35520269C</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
 			<dict>
 				<key>destinationuid</key>
 				<string>77E0F242-EF4F-49EE-B767-B55851F84C6F</string>
@@ -164,7 +100,7 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>EA136B6F-148E-41B8-8A25-58B9CD4251A9</string>
+				<string>1C075EE3-07F0-409E-92C9-7EF4DE695E26</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -175,30 +111,46 @@
 				<false/>
 			</dict>
 		</array>
-		<key>EA136B6F-148E-41B8-8A25-58B9CD4251A9</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>6F8A2C30-E13A-4888-999D-FACFC9599D98</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 	</dict>
 	<key>createdby</key>
 	<string>FireFingers21</string>
 	<key>description</key>
-	<string>Search Zen bookmarks in Alfred</string>
+	<string>Search Zen bookmarks</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
 	<string>Zen Bookmarks</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>1548B684-9B57-4C83-889B-7AB17368732A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -278,335 +230,10 @@
 			<integer>3</integer>
 		</dict>
 		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>0</integer>
-				<key>hotmod</key>
-				<integer>0</integer>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>1548B684-9B57-4C83-889B-7AB17368732A</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.junction</string>
 			<key>uid</key>
 			<string>54226B46-76B4-420C-A3A4-E1CF01EE0BA9</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<true/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>[[ $setting == browser ]] &amp;&amp; default="System Default" || default="&lt;None&gt;"
-
-currSelected='
-	"subtitle": "Currently Selected",
-	"match": "",
-	"valid": "false"
-'
-
-cat &lt;&lt; EOB
-{"items": [
-	{
-		"title": "$default",
-		"arg": "",
-		$([[ -z ${(P)setting} ]] &amp;&amp; echo $currSelected)
-	},
-	{
-		"title": "Arc",
-		"arg": "company.thebrowser.Browser",
-		$([[ ${(P)setting} == "company.thebrowser.Browser" ]] &amp;&amp; echo $currSelected)
-	},
-	{
-		"title": "Firefox",
-		"arg": "org.mozilla.firefox",
-		$([[ ${(P)setting} == "org.mozilla.firefox" ]] &amp;&amp; echo $currSelected)
-	},
-	{
-		"title": "Google Chrome",
-		"arg": "com.google.Chrome",
-		$([[ ${(P)setting} == "com.google.Chrome" ]] &amp;&amp; echo $currSelected)
-	},
-	{
-		"title": "Microsoft Edge",
-		"arg": "com.microsoft.edgemac",
-		$([[ ${(P)setting} == "com.microsoft.edgemac" ]] &amp;&amp; echo $currSelected)
-	},
-	{
-		"title": "Opera",
-		"arg": "com.operasoftware.Opera",
-		$([[ ${(P)setting} == "com.operasoftware.Opera" ]] &amp;&amp; echo $currSelected)
-	},
-	{
-		"title": "Orion",
-		"arg": "com.kagi.kagimacOS",
-		$([[ ${(P)setting} == "com.kagi.kagimacOS" ]] &amp;&amp; echo $currSelected)
-	},
-	{
-		"title": "Safari",
-		"arg": "com.apple.Safari",
-		$([[ ${(P)setting} == "com.apple.Safari" ]] &amp;&amp; echo $currSelected)
-	},
-	{
-		"title": "Zen",
-		"arg": "app.zen-browser.zen",
-		$([[ ${(P)setting} == "app.zen-browser.zen" ]] &amp;&amp; echo $currSelected)
-	}
-]}
-EOB</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>skipuniversalaction</key>
-				<true/>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>Select Browser</string>
-				<key>type</key>
-				<integer>11</integer>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>E007DCBD-DBEA-4257-8AFE-2CDEA15E19BD</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>on run argv
-	tell application id "com.runningwithcrayons.Alfred"
-		set bundleID to (system attribute "alfred_workflow_bundleid")
-		set configuration (system attribute "setting") to value argv in workflow bundleID
-	end tell
-end run</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>74C96E5F-4974-4901-B09D-1B0E8CE147E8</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<true/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>cat &lt;&lt; EOB
-{"items": [
-	{
-		"title": "Primary Browser",
-		"subtitle": "Change the primary browser for opening bookmarks",
-		"variables": {
-			"setting": "browser",
-			"notifier": "Primary browser changed"
-		}
-	},
-	{
-		"title": "Secondary Browser",
-		"subtitle": "Change the secondary browser for opening bookmarks",
-		"variables": {
-			"setting": "browser2",
-			"notifier": "Secondary browser changed"
-		}
-	}
-]}
-EOB</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>skipuniversalaction</key>
-				<true/>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>Select Setting</string>
-				<key>type</key>
-				<integer>11</integer>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>83517451-8657-4071-A9D9-BCE60E3988A2</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{var:notifier}</string>
-				<key>title</key>
-				<string>{const:alfred_workflow_name}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>3BDFD6FD-AF87-4AEA-A15E-0AF5BEE62396</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:pref_id}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>browser</string>
-						<key>outputlabel</key>
-						<string>browser</string>
-						<key>uid</key>
-						<string>56D023CC-6B52-48FC-9ED5-65F35520269C</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:pref_id}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>profileManager</string>
-						<key>outputlabel</key>
-						<string>profileManager</string>
-						<key>uid</key>
-						<string>666B620F-A174-4A1A-80E4-40B51E14AAC4</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:pref_id}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>profilePath</string>
-						<key>outputlabel</key>
-						<string>profilePath</string>
-						<key>uid</key>
-						<string>A4F1585C-E163-4F74-ABAE-F5CC61049DAC</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:pref_id}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>build</string>
-						<key>outputlabel</key>
-						<string>build</string>
-						<key>uid</key>
-						<string>66AA51AA-0A52-4282-B1FB-269CD8ACE817</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>else</string>
-				<key>hideelse</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>E1B365EF-BB47-41C8-B305-4FF9CE4F434B</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -695,16 +322,73 @@ esac</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:pref_id}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>profileManager</string>
+						<key>outputlabel</key>
+						<string>profileManager</string>
+						<key>uid</key>
+						<string>666B620F-A174-4A1A-80E4-40B51E14AAC4</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:pref_id}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>profilePath</string>
+						<key>outputlabel</key>
+						<string>profilePath</string>
+						<key>uid</key>
+						<string>A4F1585C-E163-4F74-ABAE-F5CC61049DAC</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:pref_id}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>configure</string>
+						<key>outputlabel</key>
+						<string>configure</string>
+						<key>uid</key>
+						<string>66AA51AA-0A52-4282-B1FB-269CD8ACE817</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>E1B365EF-BB47-41C8-B305-4FF9CE4F434B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
 				<string>on run argv
-	tell application id "com.runningwithcrayons.Alfred"
-		set bundleID to (system attribute "alfred_workflow_bundleid")
-		set configuration "releaseChannel" to value argv in workflow bundleID
-	end tell
+	tell application id "com.runningwithcrayons.Alfred" to reveal workflow (system attribute "alfred_workflow_bundleid") with configuration
 end run</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
@@ -716,124 +400,33 @@ end run</string>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>6F8A2C30-E13A-4888-999D-FACFC9599D98</string>
+			<string>1C075EE3-07F0-409E-92C9-7EF4DE695E26</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<true/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>currSelected='
-	"subtitle": "Currently Selected",
-	"match": "",
-	"valid": "false"
-'
-
-cat &lt;&lt; EOB
-{"items": [
-	{
-		"title": "Zen Browser",
-		"arg": "zen",
-		$([[ ${releaseChannel} == "zen" ]] &amp;&amp; echo $currSelected)
-	},
-	{
-		"title": "Zen Twilight",
-		"arg": "zentwilight",
-		"icon": { "path": "images/zentwilightLogo.png" },
-		$([[ ${releaseChannel} == "zentwilight" ]] &amp;&amp; echo $currSelected)
-	}
-]}
-EOB</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>skipuniversalaction</key>
-				<true/>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>Select Release Channel</string>
-				<key>type</key>
-				<integer>11</integer>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>EA136B6F-148E-41B8-8A25-58B9CD4251A9</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>Release Channel changed</string>
-				<key>title</key>
-				<string>{const:alfred_workflow_name}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>C0E39F35-B1CB-459F-8D72-BC47E355518C</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
 	<string>## Setup
 
-This workflow requires [jq](https://jqlang.github.io/jq/) to function, which now comes preinstalled on macOS Sequoia 15.0.0 and later.
+This workflow requires [jq](https://jqlang.github.io/jq/) to function, which comes preinstalled on macOS 15 Sequoia and later.
 
 ## Usage
 
-Search for your [Zen](https://zen-browser.app/) bookmarks using the `bm` keyword.
+Search for your [Zen](https://zen-browser.app/) bookmarks via the `bm` keyword. Type to refine your search.
 
 ![Searching for Zen bookmarks](images/about/keyword.png)
 
-Type to refine your search. Bookmarks are always filtered by Name, while filtering by URL, Tags, Keyword, and bookmark description are configurable from the [Workflow’s Configuration](https://www.alfredapp.com/help/workflows/user-configuration/).
+Bookmarks are always searchable by Name, while filtering by Description, Keyword, URL, and Tag is configurable from the [Workflow’s Configuration](https://www.alfredapp.com/help/workflows/user-configuration/).
 
 ![Narrowing search for Zen bookmarks](images/about/tagFilter.png)
 
-* &lt;kbd&gt;↩&lt;/kbd&gt; Open bookmark in primary browser
-* &lt;kbd&gt;⇧&lt;/kbd&gt;&lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Open in primary browser without closing Alfred (when browser is in focus)
-* &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Open bookmark in secondary browser
-* &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;C&lt;/kbd&gt; Copy bookmark URL
-* &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;L&lt;/kbd&gt; View all tags and full URL in Large Type
-* &lt;kbd&gt;⇧&lt;/kbd&gt; Hold to show bookmark description
+* &lt;kbd&gt;↩&lt;/kbd&gt; Open bookmark in primary browser.
+* &lt;kbd&gt;⇧&lt;/kbd&gt;&lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Open in primary browser without closing Alfred.
+* &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Open bookmark in secondary browser.
+* &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;L&lt;/kbd&gt; View all tags and full URL in Large Type.
+* &lt;kbd&gt;⇧&lt;/kbd&gt; Hold to show bookmark description.
 
-The Zen Twilight build is also supported and [configurable](https://www.alfredapp.com/help/workflows/user-configuration/). The Workflow's icon colours and bookmarks will change based on the selected Release Channel.
+The Zen Twilight build is also supported. The Workflow's icon colours and bookmarks will change based on the [configured](https://www.alfredapp.com/help/workflows/user-configuration/) Release Channel.
 
 ![Searching for Zen bookmarks using Nightly](images/about/otherBuilds.png)
 
@@ -841,7 +434,7 @@ Append `::` to the configured [Keyword](https://www.alfredapp.com/help/workflows
 
 ![Other actions](images/about/inlineSettings.png)
 
-Configure the [Hotkey](https://www.alfredapp.com/help/workflows/triggers/hotkey/) as a shortcut to search for your bookmarks.
+Configure the [Hotkey](https://www.alfredapp.com/help/workflows/triggers/hotkey/) as a shortcut for searching your bookmarks.
 
 Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is case sensitive.
 
@@ -855,16 +448,16 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>15</real>
+			<real>30</real>
 		</dict>
-		<key>3BDFD6FD-AF87-4AEA-A15E-0AF5BEE62396</key>
+		<key>1C075EE3-07F0-409E-92C9-7EF4DE695E26</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>11</integer>
 			<key>xpos</key>
-			<real>720</real>
+			<real>315</real>
 			<key>ypos</key>
-			<real>275</real>
+			<real>490</real>
 		</dict>
 		<key>44257FFC-200D-4323-8F39-A91B0B3E4DDC</key>
 		<dict>
@@ -875,7 +468,7 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 			<key>xpos</key>
 			<real>450</real>
 			<key>ypos</key>
-			<real>15</real>
+			<real>30</real>
 		</dict>
 		<key>54226B46-76B4-420C-A3A4-E1CF01EE0BA9</key>
 		<dict>
@@ -884,7 +477,7 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 			<key>xpos</key>
 			<real>355</real>
 			<key>ypos</key>
-			<real>95</real>
+			<real>110</real>
 		</dict>
 		<key>64D99BDC-7828-4807-8F9A-23AE224E9E39</key>
 		<dict>
@@ -895,25 +488,7 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>380</real>
-		</dict>
-		<key>6F8A2C30-E13A-4888-999D-FACFC9599D98</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>11</integer>
-			<key>xpos</key>
-			<real>450</real>
-			<key>ypos</key>
-			<real>485</real>
-		</dict>
-		<key>74C96E5F-4974-4901-B09D-1B0E8CE147E8</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>11</integer>
-			<key>xpos</key>
-			<real>585</real>
-			<key>ypos</key>
-			<real>275</real>
+			<real>385</real>
 		</dict>
 		<key>77E0F242-EF4F-49EE-B767-B55851F84C6F</key>
 		<dict>
@@ -922,25 +497,7 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 			<key>xpos</key>
 			<real>315</real>
 			<key>ypos</key>
-			<real>380</real>
-		</dict>
-		<key>83517451-8657-4071-A9D9-BCE60E3988A2</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>11</integer>
-			<key>xpos</key>
-			<real>315</real>
-			<key>ypos</key>
-			<real>275</real>
-		</dict>
-		<key>C0E39F35-B1CB-459F-8D72-BC47E355518C</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>11</integer>
-			<key>xpos</key>
-			<real>585</real>
-			<key>ypos</key>
-			<real>485</real>
+			<real>385</real>
 		</dict>
 		<key>D0EB740F-5590-4BEA-AD30-5FC6944D1D8F</key>
 		<dict>
@@ -951,16 +508,7 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 			<key>xpos</key>
 			<real>180</real>
 			<key>ypos</key>
-			<real>15</real>
-		</dict>
-		<key>E007DCBD-DBEA-4257-8AFE-2CDEA15E19BD</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>11</integer>
-			<key>xpos</key>
-			<real>450</real>
-			<key>ypos</key>
-			<real>275</real>
+			<real>30</real>
 		</dict>
 		<key>E1B365EF-BB47-41C8-B305-4FF9CE4F434B</key>
 		<dict>
@@ -969,16 +517,7 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 			<key>xpos</key>
 			<real>180</real>
 			<key>ypos</key>
-			<real>370</real>
-		</dict>
-		<key>EA136B6F-148E-41B8-8A25-58B9CD4251A9</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>11</integer>
-			<key>xpos</key>
-			<real>315</real>
-			<key>ypos</key>
-			<real>485</real>
+			<real>390</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -1031,25 +570,6 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 				<key>required</key>
 				<false/>
 				<key>text</key>
-				<string>Search by URL</string>
-			</dict>
-			<key>description</key>
-			<string></string>
-			<key>label</key>
-			<string></string>
-			<key>type</key>
-			<string>checkbox</string>
-			<key>variable</key>
-			<string>useURL</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>default</key>
-				<true/>
-				<key>required</key>
-				<false/>
-				<key>text</key>
 				<string>Search by Keyword</string>
 			</dict>
 			<key>description</key>
@@ -1069,10 +589,29 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 				<key>required</key>
 				<false/>
 				<key>text</key>
+				<string>Search by URL</string>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string></string>
+			<key>type</key>
+			<string>checkbox</string>
+			<key>variable</key>
+			<string>useURL</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<true/>
+				<key>required</key>
+				<false/>
+				<key>text</key>
 				<string>Search by Tag</string>
 			</dict>
 			<key>description</key>
-			<string>Prefixing words with # filters by tag</string>
+			<string>Prefixing words with # filters by Tag</string>
 			<key>label</key>
 			<string></string>
 			<key>type</key>
@@ -1084,37 +623,11 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<string>zen</string>
-				<key>pairs</key>
-				<array>
-					<array>
-						<string>Zen</string>
-						<string>zen</string>
-					</array>
-					<array>
-						<string>Twilight</string>
-						<string>zentwilight</string>
-					</array>
-				</array>
-			</dict>
-			<key>description</key>
-			<string>Select your installed Zen build</string>
-			<key>label</key>
-			<string>Release Channel</string>
-			<key>type</key>
-			<string>popupbutton</string>
-			<key>variable</key>
-			<string>releaseChannel</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>default</key>
 				<false/>
 				<key>required</key>
 				<false/>
 				<key>text</key>
-				<string>Show all tags in subtitle</string>
+				<string>Show all Tags in subtitle</string>
 			</dict>
 			<key>description</key>
 			<string></string>
@@ -1260,7 +773,35 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 			<key>variable</key>
 			<string>browser2</string>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>zen</string>
+				<key>pairs</key>
+				<array>
+					<array>
+						<string>Zen</string>
+						<string>zen</string>
+					</array>
+					<array>
+						<string>Twilight</string>
+						<string>zenTwilight</string>
+					</array>
+				</array>
+			</dict>
+			<key>description</key>
+			<string>Select your installed Zen build</string>
+			<key>label</key>
+			<string>Release Channel</string>
+			<key>type</key>
+			<string>popupbutton</string>
+			<key>variable</key>
+			<string>releaseChannel</string>
+		</dict>
 	</array>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
 	<string>2025.4</string>
 	<key>webaddress</key>
