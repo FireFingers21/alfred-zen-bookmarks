@@ -411,7 +411,8 @@
 				<key>script</key>
 				<string>case "${pref_id}" in
 	"profileManager")
-		open -b "org.mozilla.${releaseChannel}" "about:profiles"
+		# Bundle ID is the same for Browser and Twilight as of writing
+		open -b "app.zen-browser.zen" "about:profiles"
 		;;
 	"profilePath")
 		open "${1}"
@@ -589,19 +590,28 @@ Bookmarks are always searchable by Name, while filtering by Description, Keyword
 * &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;L&lt;/kbd&gt; View all tags and full URL in Large Type.
 * &lt;kbd&gt;⇧&lt;/kbd&gt; Hold to show bookmark description.
 
-The Zen Twilight build is also supported. The Workflow's icon colours and bookmarks will change based on the [configured](https://www.alfredapp.com/help/workflows/user-configuration/) Release Channel.
+Search your Zen history via the `bh` keyword. History entries are searchable by Name and URL.
+
+![Searching Zen history](images/about/history.png)
+
+* &lt;kbd&gt;↩&lt;/kbd&gt; Open entry in primary browser.
+* &lt;kbd&gt;⇧&lt;/kbd&gt;&lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Open in primary browser without closing Alfred.
+* &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Open entry in secondary browser.
+* &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;L&lt;/kbd&gt; View full Date and URL in Large Type.
+
+The Zen Twilight build is also supported. The Workflow's icon colours, bookmarks, and history will change based on the [configured](https://www.alfredapp.com/help/workflows/user-configuration/) Release Channel.
 
 ![Searching for Zen bookmarks using Nightly](images/about/otherBuilds.png)
 
-Append `::` to the configured [Keyword](https://www.alfredapp.com/help/workflows/inputs/keyword) to access other actions, including opening the [Zen Profile Manager](https://support.mozilla.org/kb/profile-manager-create-remove-switch-firefox-profiles). Bookmarks are only indexed from the default profile, which can be changed from the Profile Manager in each Zen build.
+Append `::` to the configured [Keyword](https://www.alfredapp.com/help/workflows/inputs/keyword) to access other actions, including opening the [Zen Profile Manager](https://support.mozilla.org/kb/profile-manager-create-remove-switch-firefox-profiles). Bookmarks and history are only indexed from the default profile, which can be changed from the Profile Manager in each Zen build.
 
 ![Other actions](images/about/inlineSettings.png)
 
-Configure the [Hotkey](https://www.alfredapp.com/help/workflows/triggers/hotkey/) as a shortcut for searching your bookmarks.
+Configure the [Hotkeys](https://www.alfredapp.com/help/workflows/triggers/hotkey/) as shortcuts for searching your bookmarks and history.
 
 Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is case sensitive.
 
-**Note**: Due to a limitation of Firefox (which Zen is based on), bookmark changes may take time to appear in Alfred. Restarting Zen will make all changes appear immediately.</string>
+**Note**: Due to a Zen limitation, bookmark &amp; history changes may take time to appear in Alfred. Restarting Zen will make all changes appear immediately.</string>
 	<key>uidata</key>
 	<dict>
 		<key>04B5A58B-0AA8-4F8A-ACBD-4AC709DC09CB</key>
@@ -835,7 +845,7 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 				<string>Search by Tag</string>
 			</dict>
 			<key>description</key>
-			<string>Prefixing words with # filters by Tag</string>
+			<string>Prefixing words with # filters by Tag.</string>
 			<key>label</key>
 			<string></string>
 			<key>type</key>
@@ -873,7 +883,7 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 				<string>Enable Quick Look</string>
 			</dict>
 			<key>description</key>
-			<string>Tap shift or ⌘Y to Quick Look bookmarks</string>
+			<string>Tap shift or ⌘Y to Quick Look bookmarks &amp; history.</string>
 			<key>label</key>
 			<string></string>
 			<key>type</key>
@@ -931,7 +941,7 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 				</array>
 			</dict>
 			<key>description</key>
-			<string>Primary browser for opening bookmarks</string>
+			<string>Primary browser for opening bookmarks &amp; history.</string>
 			<key>label</key>
 			<string>Default Browsers</string>
 			<key>type</key>
@@ -989,7 +999,7 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 				</array>
 			</dict>
 			<key>description</key>
-			<string>Secondary browser for opening bookmarks</string>
+			<string>Secondary browser for opening bookmarks &amp; history.</string>
 			<key>label</key>
 			<string></string>
 			<key>type</key>
@@ -1015,7 +1025,7 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 				</array>
 			</dict>
 			<key>description</key>
-			<string>Select your installed Zen build</string>
+			<string>Select your installed Zen build.</string>
 			<key>label</key>
 			<string>Release Channel</string>
 			<key>type</key>
