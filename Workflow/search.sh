@@ -43,7 +43,7 @@ sqlite3 -json ${bookmarks_file} ${sqlQuery} | jq -cs \
                 (if $useTag == "1" then (.tag_names|fromjson|.[1:]|map("#" + .)|join(" ")) else empty end)
             ] | map(select(.)) | join(" "),
     		"quicklookurl": "\(if $useQL == "1" then .url else "" end)",
-    		"text": { "largetype": "[\(.tag_names | fromjson | .[1:] | join(", "))]\n\n\(.url)" },
+            "text": { "largetype": "[\(.tag_names | fromjson | .[1:] | join(", "))]\n\n\(.url)" },
             "icon": { "path": "images/\($releaseChannel).png" },
     		"mods": {
     			"cmd": {
