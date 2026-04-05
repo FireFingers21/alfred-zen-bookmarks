@@ -15,6 +15,7 @@ readonly history_file="file://${HOME}/Library/Application Support/zen/${defaultP
 query="${1}"
 query="${query//\%/\\%}"
 query="${query//_/\_}"
+query="${query//'/''}"
 titleQuery="%${query// /%' ESCAPE '\\' AND p.title LIKE '%}%"
 urlQuery="%${query// /%' ESCAPE '\\' AND p.url LIKE '%}%"
 
