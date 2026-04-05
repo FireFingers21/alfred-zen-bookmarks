@@ -8,11 +8,24 @@
 	<string>Shared</string>
 	<key>connections</key>
 	<dict>
+		<key>00D2DE34-C4E0-4933-A04A-CFAA8B4F7946</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FD24E5EC-FE8D-4105-9A4B-82F1F565BE49</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>04B5A58B-0AA8-4F8A-ACBD-4AC709DC09CB</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>D4731DBF-4CBC-4D7D-9B2E-F169076CDA53</string>
+				<string>FD24E5EC-FE8D-4105-9A4B-82F1F565BE49</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -34,13 +47,24 @@
 				<false/>
 			</dict>
 		</array>
-		<key>44257FFC-200D-4323-8F39-A91B0B3E4DDC</key>
-		<array/>
+		<key>2632A583-2FC4-4B53-A86A-E1CB5393845F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FD24E5EC-FE8D-4105-9A4B-82F1F565BE49</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>54226B46-76B4-420C-A3A4-E1CF01EE0BA9</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>44257FFC-200D-4323-8F39-A91B0B3E4DDC</string>
+				<string>FD24E5EC-FE8D-4105-9A4B-82F1F565BE49</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -79,7 +103,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>44257FFC-200D-4323-8F39-A91B0B3E4DDC</string>
+				<string>00D2DE34-C4E0-4933-A04A-CFAA8B4F7946</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -114,25 +138,11 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>77E0F242-EF4F-49EE-B767-B55851F84C6F</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>A4F1585C-E163-4F74-ABAE-F5CC61049DAC</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
 				<string>94A76A92-67A6-439F-866A-1ADB8A6E20A7</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
-				<key>sourceoutputuid</key>
-				<string>66AA51AA-0A52-4282-B1FB-269CD8ACE817</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -141,7 +151,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>D4731DBF-4CBC-4D7D-9B2E-F169076CDA53</string>
+				<string>2632A583-2FC4-4B53-A86A-E1CB5393845F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -171,33 +181,6 @@
 	<string>Zen Bookmarks</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string># Secondary browser selection
-[[ "${bSecondary}" &amp;&amp; -n "${browser2}" ]] &amp;&amp; browser="${browser2}"
-
-# Primary browser selection
-[[ -z "${browser}" ]] &amp;&amp; open "${1}" || open -b "${browser}" "${1}"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>11</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>44257FFC-200D-4323-8F39-A91B0B3E4DDC</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -282,9 +265,47 @@
 			<key>type</key>
 			<string>alfred.workflow.utility.junction</string>
 			<key>uid</key>
+			<string>00D2DE34-C4E0-4933-A04A-CFAA8B4F7946</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
 			<string>54226B46-76B4-420C-A3A4-E1CF01EE0BA9</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string># Specify system default browser to handle opening files
+default_browser="$(plutil -convert json "${HOME}/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist" -o - | jq -r '.LSHandlers[] | select(.LSHandlerURLScheme == "https").LSHandlerRoleAll')"
+
+# Secondary browser selection
+[[ "${bSecondary}" &amp;&amp; -n "${browser2}" ]] &amp;&amp; browser="${browser2}"
+
+# Primary browser selection
+[[ -z "${browser}" ]] &amp;&amp; open -b "${default_browser}" "${1}" || open -b "${browser}" "${1}"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>11</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>FD24E5EC-FE8D-4105-9A4B-82F1F565BE49</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -314,6 +335,14 @@
 			<string>84C707B7-F9D7-4CF2-9AD1-C73C9086055D</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>2632A583-2FC4-4B53-A86A-E1CB5393845F</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -367,33 +396,6 @@
 			<integer>3</integer>
 		</dict>
 		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string># Secondary browser selection
-[[ "${bSecondary}" &amp;&amp; -n "${browser2}" ]] &amp;&amp; browser="${browser2}"
-
-# Primary browser selection
-[[ -z "${browser}" ]] &amp;&amp; open "${1}" || open -b "${browser}" "${1}"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>11</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>D4731DBF-4CBC-4D7D-9B2E-F169076CDA53</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.junction</string>
 			<key>uid</key>
@@ -409,15 +411,8 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>case "${pref_id}" in
-	"profileManager")
-		# Bundle ID is the same for Browser and Twilight as of writing
-		open -b "app.zen-browser.zen" "about:profiles"
-		;;
-	"profilePath")
-		open "${1}"
-		;;
-esac</string>
+				<string># Bundle ID is the same for Browser and Twilight as of writing
+open -b "app.zen-browser.zen" "about:profiles"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -498,43 +493,15 @@ esac</string>
 						<key>matchstring</key>
 						<string>profileManager</string>
 						<key>outputlabel</key>
-						<string>profileManager</string>
+						<string>profileMGMT</string>
 						<key>uid</key>
 						<string>666B620F-A174-4A1A-80E4-40B51E14AAC4</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:pref_id}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>profilePath</string>
-						<key>outputlabel</key>
-						<string>profilePath</string>
-						<key>uid</key>
-						<string>A4F1585C-E163-4F74-ABAE-F5CC61049DAC</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:pref_id}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>configure</string>
-						<key>outputlabel</key>
-						<string>configure</string>
-						<key>uid</key>
-						<string>66AA51AA-0A52-4282-B1FB-269CD8ACE817</string>
 					</dict>
 				</array>
 				<key>elselabel</key>
 				<string>else</string>
 				<key>hideelse</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -546,27 +513,23 @@ esac</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>on run argv
-	tell application id "com.runningwithcrayons.Alfred" to reveal workflow (system attribute "alfred_workflow_bundleid") with configuration
-end run</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
+				<key>browser</key>
 				<string></string>
-				<key>type</key>
-				<integer>6</integer>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string></string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
 			<string>94A76A92-67A6-439F-866A-1ADB8A6E20A7</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -614,6 +577,15 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 **Note**: Due to a Zen limitation, bookmark &amp; history changes may take time to appear in Alfred. Restarting Zen will make all changes appear immediately.</string>
 	<key>uidata</key>
 	<dict>
+		<key>00D2DE34-C4E0-4933-A04A-CFAA8B4F7946</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<real>355</real>
+			<key>ypos</key>
+			<real>30</real>
+		</dict>
 		<key>04B5A58B-0AA8-4F8A-ACBD-4AC709DC09CB</key>
 		<dict>
 			<key>colorindex</key>
@@ -632,16 +604,14 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 			<key>ypos</key>
 			<real>30</real>
 		</dict>
-		<key>44257FFC-200D-4323-8F39-A91B0B3E4DDC</key>
+		<key>2632A583-2FC4-4B53-A86A-E1CB5393845F</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>2</integer>
-			<key>note</key>
-			<string>Open URL</string>
+			<integer>9</integer>
 			<key>xpos</key>
-			<real>450</real>
+			<real>355</real>
 			<key>ypos</key>
-			<real>30</real>
+			<real>180</real>
 		</dict>
 		<key>54226B46-76B4-420C-A3A4-E1CF01EE0BA9</key>
 		<dict>
@@ -661,7 +631,7 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>385</real>
+			<real>400</real>
 		</dict>
 		<key>77E0F242-EF4F-49EE-B767-B55851F84C6F</key>
 		<dict>
@@ -701,17 +671,6 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 			<key>ypos</key>
 			<real>30</real>
 		</dict>
-		<key>D4731DBF-4CBC-4D7D-9B2E-F169076CDA53</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>9</integer>
-			<key>note</key>
-			<string>Open URL</string>
-			<key>xpos</key>
-			<real>450</real>
-			<key>ypos</key>
-			<real>180</real>
-		</dict>
 		<key>E1B365EF-BB47-41C8-B305-4FF9CE4F434B</key>
 		<dict>
 			<key>colorindex</key>
@@ -719,7 +678,7 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 			<key>xpos</key>
 			<real>180</real>
 			<key>ypos</key>
-			<real>390</real>
+			<real>420</real>
 		</dict>
 		<key>F237951A-300A-4DAC-A7AB-CC69BEF8CC93</key>
 		<dict>
@@ -731,6 +690,15 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 			<real>180</real>
 			<key>ypos</key>
 			<real>180</real>
+		</dict>
+		<key>FD24E5EC-FE8D-4105-9A4B-82F1F565BE49</key>
+		<dict>
+			<key>note</key>
+			<string>Open URL</string>
+			<key>xpos</key>
+			<real>450</real>
+			<key>ypos</key>
+			<real>115</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -903,10 +871,6 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 						<string></string>
 					</array>
 					<array>
-						<string>Arc</string>
-						<string>company.thebrowser.Browser</string>
-					</array>
-					<array>
 						<string>Chromium</string>
 						<string>org.chromium.Chromium</string>
 					</array>
@@ -959,10 +923,6 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 					<array>
 						<string>&lt;None&gt;</string>
 						<string></string>
-					</array>
-					<array>
-						<string>Arc</string>
-						<string>company.thebrowser.Browser</string>
 					</array>
 					<array>
 						<string>Chromium</string>
