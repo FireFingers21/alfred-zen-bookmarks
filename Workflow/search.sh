@@ -9,8 +9,8 @@ case "${releaseChannel}" in
 		readonly versionCode="9EBD2AC824310766"
 		;;
 esac
-readonly defaultProfile=$(awk -v versionCode="$versionCode" 'BEGIN {FS="="} $0 ~ versionCode {flag=1} flag && /^Default=Profiles/ {print $2; exit}' "${HOME}/Library/Application Support/zen/installs.ini")
-readonly bookmarks_file="file://${HOME}/Library/Application Support/zen/${defaultProfile}/places.sqlite?immutable=1"
+defaultProfile=$(awk -v versionCode="$versionCode" 'BEGIN {FS="="} $0 ~ versionCode {flag=1} flag && /^Default=/ {print $2; exit}' "${HOME}/Library/Application Support/zen/installs.ini")
+bookmarks_file="file://${defaultProfile/#Profiles/${HOME}/Library/Application Support/zen/Profiles}/places.sqlite?immutable=1"
 
 readonly sqlQuery="SELECT p.id, p.url, b.title, p.description, k.keyword, JSON_GROUP_ARRAY(DISTINCT t.title) AS tag_names
 FROM moz_places p
