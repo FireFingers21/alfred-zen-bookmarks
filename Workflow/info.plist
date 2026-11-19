@@ -337,14 +337,6 @@ default_browser="$(plutil -convert json "${HOME}/Library/Preferences/com.apple.L
 			<integer>2</integer>
 		</dict>
 		<dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
-			<key>uid</key>
-			<string>2632A583-2FC4-4B53-A86A-E1CB5393845F</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
@@ -394,6 +386,14 @@ default_browser="$(plutil -convert json "${HOME}/Library/Preferences/com.apple.L
 			<string>F237951A-300A-4DAC-A7AB-CC69BEF8CC93</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>2632A583-2FC4-4B53-A86A-E1CB5393845F</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>type</key>
@@ -533,9 +533,8 @@ open -b "app.zen-browser.zen" "about:profiles"</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>## Setup
-
-This workflow requires [jq](https://jqlang.github.io/jq/) to function, which comes preinstalled on macOS 15 Sequoia and later.
+	<string>&gt; [!NOTE]
+&gt; Due to a Zen limitation, bookmark &amp; history changes may take time to appear in Alfred. Restarting Zen will make all changes appear immediately.
 
 ## Usage
 
@@ -572,9 +571,8 @@ Append `::` to the configured [Keyword](https://www.alfredapp.com/help/workflows
 
 Configure the [Hotkeys](https://www.alfredapp.com/help/workflows/triggers/hotkey/) as shortcuts for searching your bookmarks and history.
 
-Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is case sensitive.
-
-**Note**: Due to a Zen limitation, bookmark &amp; history changes may take time to appear in Alfred. Restarting Zen will make all changes appear immediately.</string>
+&gt; [!TIP]
+&gt; Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is case sensitive.</string>
 	<key>uidata</key>
 	<dict>
 		<key>00D2DE34-C4E0-4933-A04A-CFAA8B4F7946</key>
@@ -905,7 +903,7 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 				</array>
 			</dict>
 			<key>description</key>
-			<string>Primary browser for opening bookmarks &amp; history.</string>
+			<string></string>
 			<key>label</key>
 			<string>Default Browsers</string>
 			<key>type</key>
@@ -959,7 +957,7 @@ Bookmarks with the tag `Exclude-Alfred` will be hidden from search. This tag is 
 				</array>
 			</dict>
 			<key>description</key>
-			<string>Secondary browser for opening bookmarks &amp; history.</string>
+			<string>Primary &amp; secondary browsers for opening links.</string>
 			<key>label</key>
 			<string></string>
 			<key>type</key>
