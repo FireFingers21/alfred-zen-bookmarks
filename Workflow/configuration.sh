@@ -9,7 +9,7 @@ case "${releaseChannel}" in
 		readonly versionCode="9EBD2AC824310766"
 		;;
 esac
-readonly defaultProfile=$(awk -v versionCode="$versionCode" 'BEGIN {FS="="} $0 ~ versionCode {flag=1} flag && /^Default=Profiles/ {print $2; exit}' "${HOME}/Library/Application Support/zen/installs.ini")
+readonly defaultProfile=$(awk -v versionCode="${versionCode}" 'BEGIN {FS="="} $0 ~ versionCode {flag=1} flag && /^Default=Profiles/ {print $2; exit}' "${HOME}/Library/Application Support/zen/installs.ini")
 defaultProfilePath="/Library/Application Support/zen/${defaultProfile}"
 
 if [[ -z ${defaultProfile} ]]; then

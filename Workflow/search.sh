@@ -9,7 +9,7 @@ case "${releaseChannel}" in
 		readonly versionCode="9EBD2AC824310766"
 		;;
 esac
-defaultProfile=$(awk -v versionCode="$versionCode" 'BEGIN {FS="="} $0 ~ versionCode {flag=1} flag && /^Default=/ {print $2; exit}' "${HOME}/Library/Application Support/zen/installs.ini")
+defaultProfile=$(awk -v versionCode="${versionCode}" 'BEGIN {FS="="} $0 ~ versionCode {flag=1} flag && /^Default=/ {print $2; exit}' "${HOME}/Library/Application Support/zen/installs.ini")
 bookmarks_file="file://${defaultProfile/#Profiles/${HOME}/Library/Application Support/zen/Profiles}/places.sqlite?immutable=1"
 
 readonly sqlQuery="SELECT p.id, p.url, b.title, p.description, k.keyword, JSON_GROUP_ARRAY(DISTINCT t.title) AS tag_names
@@ -20,14 +20,14 @@ LEFT JOIN moz_keywords k ON p.id = k.place_id
 GROUP BY p.url;"
 
 # Load Bookmarks
-sqlite3 -json ${bookmarks_file} ${sqlQuery} | jq -cs \
---arg useDesc "$useDesc" \
---arg useURL "$useURL" \
---arg useTag "$useTag" \
---arg releaseChannel "$releaseChannel" \
---arg showAllTags "$showAllTags" \
---arg useQL "$useQL" \
---arg useKeyword "$useKeyword" \
+sqlite3 -json "${bookmarks_file}" "${sqlQuery}" | jq -cs \
+--arg useDesc "${useDesc}" \
+--arg useURL "${useURL}" \
+--arg useTag "${useTag}" \
+--arg releaseChannel "${releaseChannel}" \
+--arg showAllTags "${showAllTags}" \
+--arg useQL "${useQL}" \
+--arg useKeyword "${useKeyword}" \
 '{
     "items": (if (length > 0) then map(.[] | (if .tag_names | contains("Exclude-Alfred") then empty else
     	{

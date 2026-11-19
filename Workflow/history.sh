@@ -9,10 +9,12 @@ case "${releaseChannel}" in
 		readonly versionCode="9EBD2AC824310766"
 		;;
 esac
-defaultProfile=$(awk -v versionCode="$versionCode" 'BEGIN {FS="="} $0 ~ versionCode {flag=1} flag && /^Default=/ {print $2; exit}' "${HOME}/Library/Application Support/zen/installs.ini")
+defaultProfile=$(awk -v versionCode="${versionCode}" 'BEGIN {FS="="} $0 ~ versionCode {flag=1} flag && /^Default=/ {print $2; exit}' "${HOME}/Library/Application Support/zen/installs.ini")
 history_file="file://${defaultProfile/#Profiles/${HOME}/Library/Application Support/zen/Profiles}/places.sqlite?immutable=1"
 
+# SQL Query
 query="${1}"
+query="${query//\\/\\\\}"
 query="${query//\%/\\%}"
 query="${query//_/\_}"
 query="${query//'/''}"
@@ -27,9 +29,9 @@ ORDER BY visit_date DESC
 LIMIT 500;"
 
 # Load History
-sqlite3 -json ${history_file} ${sqlQuery} | jq -cs \
---arg releaseChannel "$releaseChannel" \
---arg useQL "$useQL" \
+sqlite3 -json "${history_file}" "${sqlQuery}" | jq -cs \
+--arg releaseChannel "${releaseChannel}" \
+--arg useQL "${useQL}" \
 '{
     "items": (if (length > 0) then map(unique_by(.url) | sort_by(.visit_date) | reverse | .[] |
     	{
